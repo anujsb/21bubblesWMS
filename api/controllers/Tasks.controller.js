@@ -7,9 +7,22 @@ export const getAllTasks = asyncWrapper(async (req, res) => {
   res.status(200).json({ tasks });
 });
 
-export const createTask = asyncWrapper(async (req, res) => {
-  const task = await Task.create(req.body);
-  res.status(201).json(task);
+export const createTask = asyncWrapper(async (req, res, next) => {
+  try {
+    const { title, AssignedTo, completed } = req.body;
+
+    if (!title) {
+      return next(createCustomError("Must provide Title", 400));
+    }
+    const task = await Task.create({ title, AssignedTo, completed });
+
+    res.status(201).json({
+      success: true,
+      data: task,
+    });
+  } catch (error) {
+    next(error);
+  }
 });
 
 export const getTask = asyncWrapper(async (req, res, next) => {

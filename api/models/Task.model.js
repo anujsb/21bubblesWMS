@@ -1,12 +1,17 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const TaskSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
-    required: [true, "must provide name"],
+    required: [true, "must provide Title"],
     trim: true,
-    maxlength: [20, "name can not be more than 20 characters"],
+    maxlength: [20, "Title can not be more than 20 characters"],
   },
+
+  AssignedTo: {
+    type: String,
+  },
+
   completed: {
     type: Boolean,
     default: false,
@@ -15,6 +20,6 @@ const TaskSchema = new mongoose.Schema({
 
 // module.exports = mongoose.model("Task", TaskSchema);
 
-const Task = mongoose.model('Task', TaskSchema);
+const Task = mongoose.model("Task", TaskSchema);
 
 export default Task;

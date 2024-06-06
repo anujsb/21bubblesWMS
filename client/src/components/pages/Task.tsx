@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from "../s/NavBar";
-import SideBar from "../s/SideBar";
+import NavBar from "../nav/NavBar";
+import SideBar from "../nav/SideBar";
 import { getAllTasks } from '../apiService';
 
 const Projects = () => {

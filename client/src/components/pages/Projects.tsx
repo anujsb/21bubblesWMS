@@ -1,7 +1,7 @@
 // import NavBar from "../s/NavBar";
 
-import NavBar from "../s/NavBar";
-import SideBar from "../s/SideBar";
+import NavBar from "../nav/NavBar";
+import SideBar from "../nav/SideBar";
 
 const Projects = () => {
   return (
@@ -219,27 +219,11 @@ const Projects = () => {
                     </td>
                     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
                       <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          className="h-4 w-4"
-                        >
-                          <path d="M17 6.1H3"></path>
-                          <path d="M21 12.1H3"></path>
-                          <path d="M15.1 18H3"></path>
-                        </svg>
                         Chat
                       </button>
                     </td>
                   </tr>
-                  <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  {/* <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
                     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
                       <div className="flex items-center gap-3">
                         <svg
@@ -329,7 +313,7 @@ const Projects = () => {
                         Chat
                       </button>
                     </td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
             </div>

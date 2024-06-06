@@ -1,5 +1,5 @@
-import NavBar from "../s/NavBar";
-import SideBar from "../s/SideBar";
+import NavBar from "../nav/NavBar";
+import SideBar from "../nav/SideBar";
 
 const Dashboard = () => {
   return (

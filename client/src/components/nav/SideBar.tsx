@@ -333,7 +333,9 @@ const SideBar: React.FC = () => {
             <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
-          <Link to="/" className="text-sm font-medium">Dashboard</Link>
+          <Link to="/" className="text-sm font-medium">
+            Dashboard
+          </Link>
         </button>
         <button className="w-full flex items-center space-x-2 bg-gray-200 active:bg-gray-300 py-2 px-2 rounded-lg text-gray-800">
           <svg
@@ -351,7 +353,9 @@ const SideBar: React.FC = () => {
             <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
             <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
           </svg>
-          <Link to="/projects" className="text-sm font-medium">Projects</Link>
+          <Link role="button" to="/projects" className="text-sm font-medium">
+            Projects
+          </Link>
         </button>
         <button className="w-full flex items-center space-x-2 hover:bg-gray-200 active:bg-gray-300 py-2 px-2 rounded-lg text-gray-500">
           <svg
@@ -374,23 +378,6 @@ const SideBar: React.FC = () => {
           <span className="text-sm font-medium">Tasks</span>
         </button>
         <button className="w-full flex items-center space-x-2 hover:bg-gray-200 active:bg-gray-300 py-2 px-2 rounded-lg text-gray-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="w-4 h-4"
-          >
-            <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
-            <path d="M13 5v2"></path>
-            <path d="M13 17v2"></path>
-            <path d="M13 11v2"></path>
-          </svg>
           {/* <span className="text-sm font-medium">Tax</span> */}
         </button>
       </nav>
